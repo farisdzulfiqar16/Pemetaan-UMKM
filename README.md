@@ -91,16 +91,16 @@ Proyek ini **belum menggunakan big data atau AI penuh**, namun dirancang agar **
 
 ## 🚀 Cara Menjalankan Project
 1. Clone repository
-   
-  'git clone https://github.com/username/nama-repo.git
+
+        git clone https://github.com/username/nama-repo.git
   
 2. Install dependency
 
-    npm install
+        npm install
 
 3. Jalankan aplikasi
 
-    npm run dev
+        npm run dev
 
 ---
 Catatan Pengembangan
