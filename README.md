@@ -103,20 +103,19 @@ Proyek ini **belum menggunakan big data atau AI penuh**, namun dirancang agar **
         npm run dev
 
 ---
-Catatan Pengembangan
-Dataset masih menggunakan data simulasi (dummy)
-Skala optimal saat ini: ±500–1000 data UMKM
-Project ini fokus pada visualisasi dan konsep sistem informasi, bukan sistem produksi nasional
+📌 Catatan Pengembangan
+- Dataset masih menggunakan data simulasi (dummy)
+- Skala optimal saat ini: ±500–1000 data UMKM
+- Project ini fokus pada visualisasi dan konsep sistem informasi, bukan sistem produksi nasional
 
 ---
-Konteks Akademik
+🏫 Konteks Akademik
 Mata Kuliah: Manajemen Proyek Teknologi Informasi (MPTI)
 Jenis: UAS / Proyek Akhir Mata Kuliah
 Tahun: 2026
 
 ---
-Lisensi
-
+📄 Lisensi
 Proyek ini bersifat akademik & pembelajaran.
 Bebas dikembangkan lebih lanjut untuk kebutuhan riset atau portofolio pribadi.
 
