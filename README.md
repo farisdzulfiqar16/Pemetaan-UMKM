@@ -1,17 +1,126 @@
-# React + Vite
+# 📊 Sistem Informasi Pemetaan & Statistik UMKM Kota Semarang
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Web dashboard interaktif untuk **visualisasi, pemetaan, dan analisis data UMKM Kota Semarang** berbasis web.  
+Proyek ini dikembangkan sebagai **tugas UAS Mata Kuliah MPTI** dan juga sebagai **portofolio pengembangan sistem informasi**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🎯 Tujuan Proyek
+- Menyajikan **data UMKM secara visual dan mudah dipahami**
+- Menampilkan **persebaran UMKM berbasis peta**
+- Memberikan **ringkasan statistik UMKM** untuk mendukung analisis kebijakan
+- Menjadi prototype sistem pendukung keputusan (Decision Support System) skala awal
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🧩 Fitur Utama
 
-## Expanding the ESLint configuration
+### 📁 Manajemen Data UMKM
+- Data UMKM berbasis dummy (simulasi)
+- Informasi UMKM:
+  - Nama usaha
+  - Kecamatan
+  - Kategori usaha
+  - Status (Aktif / Binaan)
+  - Tahun terdaftar
+- Tabel data UMKM dengan tampilan rapi
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-"# Pemetaan-UMKM" 
+### 📊 Statistik UMKM
+- Total UMKM
+- Jumlah UMKM Aktif & Binaan
+- Grafik:
+  - Jumlah UMKM per Kecamatan
+  - Tren UMKM per Tahun
+- Visualisasi menggunakan **Recharts**
+
+### 🗺️ Peta Persebaran UMKM
+- Peta interaktif berbasis **Leaflet**
+- Marker UMKM dengan koordinat latitude & longitude
+- Persebaran UMKM dibuat lebih alami menggunakan:
+  - Multi cluster per kecamatan
+  - Random offset agar tidak menumpuk di satu titik
+
+### 🎨 Antarmuka
+- Sidebar navigasi
+- Header dinamis sesuai halaman
+- Desain responsif menggunakan **Tailwind CSS**
+
+---
+
+## 🧠 Konsep Analisis (MPTI)
+Sistem ini mengimplementasikan konsep:
+- **Geospatial Visualization**
+- **Statistical Summary**
+- **Exploratory Data Analysis**
+- **Prototype Decision Support System (DSS)**
+
+Proyek ini **belum menggunakan big data atau AI penuh**, namun dirancang agar **mudah dikembangkan ke tahap lanjutan** seperti:
+- Heatmap UMKM
+- Clustering
+- Analisis sektor unggulan
+- Integrasi data eksternal
+
+---
+
+## ⚙️ Teknologi yang Digunakan
+- **React JS**
+- **React Router**
+- **Tailwind CSS**
+- **Recharts**
+- **React Leaflet**
+- **JavaScript (ES6)**
+
+---
+
+## 📂 Struktur Folder Singkat
+    src/
+    ├── components/
+    │ ├── Sidebar.jsx
+    │ ├── Header.jsx
+    │ ├── StatCard.jsx
+    ├── pages/
+    │ ├── Dashboard.jsx
+    │ ├── DataUMKM.jsx
+    │ ├── Statistik.jsx
+    │ ├── PetaUMKM.jsx
+    ├── dataUMKM.js
+    ├── App.jsx
+
+
+---
+
+## 🚀 Cara Menjalankan Project
+1. Clone repository
+   
+  'git clone https://github.com/username/nama-repo.git
+  
+2. Install dependency
+
+    npm install
+
+3. Jalankan aplikasi
+
+    npm run dev
+
+---
+Catatan Pengembangan
+Dataset masih menggunakan data simulasi (dummy)
+Skala optimal saat ini: ±500–1000 data UMKM
+Project ini fokus pada visualisasi dan konsep sistem informasi, bukan sistem produksi nasional
+
+---
+Konteks Akademik
+Mata Kuliah: Manajemen Proyek Teknologi Informasi (MPTI)
+Jenis: UAS / Proyek Akhir Mata Kuliah
+Tahun: 2026
+
+---
+Lisensi
+
+Proyek ini bersifat akademik & pembelajaran.
+Bebas dikembangkan lebih lanjut untuk kebutuhan riset atau portofolio pribadi.
+
+---
+Dikembangkan oleh
+Faris Dzulfiqar
+Mahasiswa Teknik Informatika
